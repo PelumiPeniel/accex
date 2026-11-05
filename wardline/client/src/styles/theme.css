@@ -1,0 +1,86 @@
+:root {
+  --navy-950: #0b1730;
+  --navy-900: #0f1e3d;
+  --navy-800: #16294f;
+  --navy-700: #1f3568;
+  --blue-500: #2f6fed;
+  --blue-400: #4f8bff;
+  --blue-100: #e8f0ff;
+  --green-500: #229a6b;
+  --green-100: #e3f7ee;
+  --cream-400: #f4d94a;
+  --cream-100: #fdf8e3;
+  --white: #ffffff;
+  --bg: #f5f7fb;
+  --surface: #ffffff;
+  --border: #e1e6f0;
+  --ink-900: #101828;
+  --ink-700: #3a4256;
+  --ink-500: #6b7387;
+  --red-500: #e04438;
+  --red-100: #fde8e6;
+  --amber-500: #d99a1e;
+  --amber-100: #fbf1d9;
+
+  --font-display: "Space Grotesk", "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --shadow-sm: 0 1px 2px rgba(15, 30, 61, 0.06);
+  --shadow-md: 0 8px 24px rgba(15, 30, 61, 0.10);
+  --shadow-lg: 0 20px 48px rgba(15, 30, 61, 0.18);
+
+  --sidebar-w: 264px;
+  --sidebar-rail-w: 76px;
+
+  /* --- Theme-aware tokens (overridden under [data-theme="dark"] below) --- */
+  --text-strong: var(--navy-900);
+  --page-glow-a: rgba(47, 111, 237, 0.06);
+  --page-glow-b: rgba(34, 154, 107, 0.05);
+  --table-head-bg: rgba(47, 111, 237, 0.04);
+
+  /* --- Glassmorphism (blue-toned, not the purple/green in the references) --- */
+  --glass-surface: rgba(20, 38, 74, 0.42);
+  --glass-surface-light: rgba(255, 255, 255, 0.06);
+  --glass-border: rgba(255, 255, 255, 0.14);
+  --glass-blur: 20px;
+  --glow-blue: 0 0 60px rgba(47, 111, 237, 0.35);
+}
+
+/* ---------------------------------------------------------------------- */
+/* Dark mode — overrides the same semantic tokens everything else already  */
+/* reads from, so components never need their own dark-mode variants.      */
+/* ---------------------------------------------------------------------- */
+[data-theme="dark"] {
+  --bg: #0b1424;
+  --surface: #101b30;
+  --border: rgba(255, 255, 255, 0.09);
+  --ink-900: #eef2fb;
+  --ink-700: #b7c1de;
+  --ink-500: #8996b8;
+  --text-strong: #f4f7fd;
+
+  --blue-100: rgba(47, 111, 237, 0.18);
+  --green-100: rgba(34, 154, 107, 0.2);
+  --red-100: rgba(224, 68, 56, 0.2);
+  --amber-100: rgba(217, 154, 30, 0.2);
+  --cream-100: rgba(244, 217, 74, 0.14);
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.55);
+
+  --page-glow-a: rgba(47, 111, 237, 0.12);
+  --page-glow-b: rgba(34, 154, 107, 0.09);
+  --table-head-bg: rgba(47, 111, 237, 0.08);
+
+  --banner-error-text: #ff9a90;
+  --banner-error-border: rgba(224, 68, 56, 0.35);
+  --banner-success-text: #7be0b6;
+  --banner-success-border: rgba(34, 154, 107, 0.35);
+  --banner-info-text: #a9c6ff;
+  --banner-info-border: rgba(47, 111, 237, 0.35);
+}
